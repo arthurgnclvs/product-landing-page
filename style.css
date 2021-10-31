@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;500;700&display=swap');
+
+*{
+  font: 400 normal 16px 'Work Sans'
+}
+
+h2{
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+#nav-bar{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: white;
+  border-bottom: solid;
+  border-color: gray;
+}
+
+#header-img{
+  width: 5%;
+  height: 0%;
+  margin-left: 5%;
+  margin-top: 10px;
+  display: inline;
+}
+
+ul{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  vertical-align: top;
+  margin-top: 35px;
+  float: right;
+}
+
+ul li{
+  display: inline;
+  padding-left: 30px;
+  margin-right: 40px;
+}
+
+.nav-link{
+  text-decoration: none;
+  color: black;
+}
+
+#emailing{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#emailing > input[type='email']{
+  width: 20%;
+  outline: none;
+}
+
+#submit{
+  margin-top: 10px;
+  outline: none;
+  background-color: orange;
+  border-style: none;
+  width: 78%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#features{
+  display: flex;
+  justify-content: space-around;
+}
+
+.features-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: orange;
+  border-style: solid;
+  border-color: black;
+  width: 30%;
+  margin-top: 5%
+}
+
+.features-box > p{
+  text-indent: 0.5em;
+  text-align: center;
+}
+
+.icons{
+  width: 20%;
+  height: 30%;
+  margin-top: 5%
+}
+
+#video-presentation{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 5%
+}
+
+#prices{
+  display: flex;
+  justify-content: space-around;
+}
+
+.prices-box{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  border-style: solid;
+  margin-top: 5%
+}
+
+.prices-box > a{
+  text-decoration: none;
+  text-align: center;
+  color: black;
+  background-color: orange;
+  width: 30%;
+  height: 25px;
+  padding-top: 1%;
+  margin-bottom: 5%;
+}
+
+.prices-title{
+  background-color: orange;
+  width: 100%;
+  text-align: center;
+}
+
+footer{
+  background-color: #dddd;
+  margin-top: 40px;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+
+footer > ul > li > a{
+  text-decoration: none;
+  color: black;
+}
+
+@media (max-width: 800px){
+  #header-img{
+    display: none;
+  }
+  
+  #emailing{
+    margin-left: 20px;
+  }
+  
+  #emailing > h2{
+    text-align: center;
+  }
+  
+  #features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .features-box{
+    width: 80%;
+  }
+  
+  iframe{
+    width: 80%;
+    
+  }
+  
+  .prices-box{
+    width: 45%;
+  }
+  
+  .prices-box > a{
+    width: 50%;
+  }
+  
+  footer{
+    display: flex;
+    justify-content: center;
+  }
+}

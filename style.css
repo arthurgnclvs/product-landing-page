@@ -78,6 +78,7 @@ ul li{
   display: flex;
   flex-direction: column;
   align-items: center;
+  flex-wrap: nowrap;
   background-color: orange;
   border-style: solid;
   border-color: black;
@@ -164,8 +165,7 @@ footer > ul > li > a{
   
   #features{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-wrap: wrap;
   }
   
   .features-box{
@@ -188,5 +188,37 @@ footer > ul > li > a{
   footer{
     display: flex;
     justify-content: center;
+  }
+}
+
+/*@media (max-width: 485px){
+
+  header{
+    margin-left: 100%;
+  }
+
+  nav > ul{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-left: 200px;
+  }
+}*/
+
+
+@media (max-width: 410px){
+  footer{
+    height: 120px;
+  }
+
+  footer > ul{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5px;
+  }
+
+  footer > ul > li{
+    padding-top: 15px;
   }
 }
